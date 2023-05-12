@@ -1,6 +1,6 @@
-# site html iei
+# Branch for Website HTML
  This is my website project for my school. Nothing fancy, I don't want to do front-end, but it's what I got...
 
 ## To-Do
 
-There are some broken things floating around the website that I hope no one spots, like the width of some elements, the navbar colors, the inconsistent sizes, and more!
+This is only the template and new ones should be created from this branch OK?
