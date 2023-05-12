@@ -159,6 +159,7 @@ label {
 }
 
 .footer {
+    margin-left: 50px;
     height: 10%;
     display: flex;
     align-items: center;
