@@ -1,0 +1,25 @@
+@media screen and (max-width : 600px) {
+    h1 {
+        font-size: 25px;
+    }
+
+    .art-div {
+        padding: 50px;
+    }
+
+    .grid-spacing {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .grid-item {
+        padding: 10px;
+    }
+}
