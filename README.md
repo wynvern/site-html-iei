@@ -1,6 +1,3 @@
-# Branch for Website HTML
- This is my website project for my school. Nothing fancy, I don't want to do front-end, but it's what I got...
+# Website for Digital Marketing
 
-## To-Do
-
-This is only the template and new ones should be created from this branch OK?
+Due to 2 May, and please remember to make better usage of divs so that the mobile versions work correctly and without querks
