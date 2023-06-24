@@ -1,0 +1,115 @@
+@media screen and (min-width: 1300px) {
+    .title {
+        font-size: 6.8em;
+    }
+
+    .fullContainer {
+        padding-left: 180px;
+        padding-right: 180px;
+    }
+}
+
+@media screen and (max-width: 738px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    button {
+        font-size: 8px;
+    }
+
+    p {
+        font-size: 10px;
+        margin-left: 0px;
+    }
+
+    h1,
+    h2,
+    h3 {
+        font-size: 12px;
+    }
+
+    .navbar {
+        top: 5px;
+    }
+
+    .title-highlighted {
+        max-width: unset;
+        min-width: unset;
+        width: 200%;
+    }
+
+    .disable-height {
+        height: 0px;
+    }
+
+    .image-box {
+        height: 90%;
+        max-width: 100px;
+        padding-right: 0px;
+        display: flex;
+        align-items: center;
+    }
+
+    .faq-container {
+        height: 400px;
+    }
+
+    .image-box img {
+        height: auto;
+        width: 100%;
+    }
+
+    .button-highlight {
+        padding: 8px;
+    }
+
+    .title {
+        font-size: 3em;
+    }
+
+    .space-left {
+        margin-left: 0px;
+    }
+
+    .fullContainer {
+        padding-left: 20px;
+        padding-right: 20px;
+        min-height: 150px;
+    }
+
+    .container-left {
+        padding-right: 2px;
+    }
+
+    .container-right {
+        padding-left: 2px;
+    }
+
+    .margin-left {
+        margin-left: 0px !important;
+    }
+
+
+    .footer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .footer-logo {
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+
+    .social-container {
+        height: 20px;
+        padding: 0;
+    }
+
+    .column-footer h3 {
+        margin-top: 0px;
+    }
+}

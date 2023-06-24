@@ -8,6 +8,7 @@
     <style>
         @import url("./css/base.css");
         @import url("./css/home.css");
+        @import url("./css/mobile.css");
     </style>
     <title>Rexoium</title>
 </head>
@@ -16,7 +17,7 @@
     <div class="fullContainer">
         <div class="navbar">
             <div class="image-box">
-                <img src="./img/logo/full_logo.svg"> <!--- Don't forget to change logo -->
+                <img draggable="false" src="./img/logo/full_logo.svg"> <!--- Don't forget to change logo -->
             </div>
             <div class="button-box">
                 <button class="space-left">Home</button>
@@ -29,7 +30,7 @@
             <div class="centered-title-container">
                 <div>
                     <h1 class="title">Rexoium</h1>
-                    <h1 class="title" style="margin-left: 45px;">Digital Marketing</h1>
+                    <h1 class="title margin-left">Digital Marketing</h1>
                 </div>
                 <div class="subtitle-container">
                     <h3>Design feito por profissionais para profissionais.</h3>
@@ -38,24 +39,24 @@
                             Entre em contato
                         </h3>
                         <div class="arrow-container">
-                            <img src="./img/icons/arrow_out.svg">
+                            <img draggable="false" src="./img/icons/arrow_out.svg">
                         </div>
                     </a>
                 </div>
             </div>
         </div>
     </div>
-    <div class="fullContainer" style="height: calc(100vh - 60px);">
+    <div class="fullContainer" style="height: fit-content;">
         <div class="container-left">
             <div class="title-highlighted">
                 <h2>Por que nos contratar</h2>
             </div>
-            <h2 class="why-contract-subtitle">
+            <h2 class="why-contract-subtitle margin-left">
                 Temos uma ampla gama de serviços que se customizam para qualquer necessidade, até para a sua.
             </h2>
             <div class="space-top-column"></div><br><br><br>
-            <h3 style="font-weight: 600; margin-left: 45px;">Por que nos contratar</h3>
-            <p style="margin-left: 45px;">
+            <h3 style="font-weight: 600;" class="margin-left">Nosso projeto mais recente</h3>
+            <p class="margin-left">
                 O projeto "The Evermore Tea Project" é uma iniciativa inovadora de marketing digital que visa promover e
                 posicionar a marca de uma empresa de chá exclusiva. A empresa acredita no poder transformador e
                 relaxante do chá, e busca compartilhar essa experiência com um público mais amplo.
@@ -64,6 +65,7 @@
                 sobre a cultura do chá, suas origens e rituais associados. Isso inclui a criação de receitas exclusivas
                 de chá, dicas de preparo e informações sobre os melhores momentos para desfrutar de uma xícara de chá.
             </p>
+            <div class="space-top-column"></div>
         </div>
         <div class="container-right">
             <div class="space-top-column"></div>
@@ -78,34 +80,35 @@
             </p>
             <br><br><br><br><br>
             <div class="tea-image-container">
-                <img src="./img/images/project_tea.png">
+                <img draggable="false" src="./img/images/project_tea.png">
             </div>
+            <div class="space-top-column"></div>
         </div>
     </div>
-    <div class="fullContainer darker-container center-child" style="height: 600px;">
+    <div class=" fullContainer darker-container center-child faq-container">
         <div class="center-faq-container">
             <h2 style="margin-bottom: 60px;">FAQ</h2>
             <div class="question-container">
-                <h3>Titulo pergunta</h3>
-                <p>Maior descrição da pergunta</p>
+                <h3>Localização física</h3>
+                <p>Saiba mais sobre a nossa localidade</p>
                 <div class="arrow-container">
-                    <img src="./img/icons/arrow_out.svg">
+                    <img draggable="false" src="./img/icons/arrow_out.svg">
                 </div>
             </div>
             <hr>
             <div class="question-container">
-                <h3>Titulo pergunta</h3>
-                <p>Maior descrição da pergunta</p>
+                <h3>Como faço para entrar</h3>
+                <p>Basta se tornar um furry peludo fofinho</p>
                 <div class="arrow-container">
-                    <img src="./img/icons/arrow_out.svg">
+                    <img draggable="false" src="./img/icons/arrow_out.svg">
                 </div>
             </div>
             <hr>
             <div class="question-container">
-                <h3>Titulo pergunta</h3>
-                <p>Maior descrição da pergunta</p>
+                <h3>Como posso pagar</h3>
+                <p>Entre em contato para saber mais</p>
                 <div class="arrow-container">
-                    <img src="./img/icons/arrow_out.svg">
+                    <img draggable="false" src="./img/icons/arrow_out.svg">
                 </div>
             </div>
         </div>
@@ -113,16 +116,28 @@
     <div class="footer">
         <div class="row-footer">
             <div class="column-footer">
-                <img src="./img/logo/full_logo.svg" class="footer-logo">
+                <div class="outer-footer-logo">
+                    <img draggable="false" src="./img/logo/full_logo.svg" class="footer-logo">
+                </div>
+                <div class="social-container">
+                    <img draggable="false" src="./img/icons/pinterest.svg">
+                    <img draggable="false" src="./img/icons/whatsapp.svg">
+                    <img draggable="false" src="./img/icons/linkedin.svg">
+                </div>
             </div>
             <div class="column-footer">
                 <h3>Contate-nos</h3>
+                <p>rexoium@furry.com</p>
+                <p>+55 51 960583223</p>
+                <p>Avenida Presidente Lucena, 1294, Ivoti, RS - Brasil</p>
             </div>
             <div class="column-footer">
                 <h3>Envie um email</h3>
+                <p>Entre em contato para planejarmos seu design.</p>
             </div>
         </div>
         <hr>
+        <p style="padding-top: 22px; float: right;">Rexoium © Todos os Direitos Reservados</p>
     </div>
 </body>
 

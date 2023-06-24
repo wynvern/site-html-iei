@@ -46,6 +46,7 @@
     display: flex;
     align-items: center;
     padding-left: 40px;
+    min-width: 400px;
 }
 
 .title-highlighted h2 {
@@ -54,7 +55,6 @@
 
 .why-contract-subtitle {
     margin-top: 40px;
-    margin-left: 40px;
 }
 
 .space-top-column {
@@ -70,6 +70,8 @@
 .tea-image-container img {
     width: 100%;
     height: auto;
+    max-height: 571px;
+    max-width: 428px;
     border-radius: var(--border-radius);
 }
 
@@ -92,4 +94,12 @@
 .question-container p {
     margin: 0;
     margin-left: auto;
+}
+
+.margin-left {
+    margin-left: 45px;
+}
+
+.faq-container {
+    height: 600px;
 }

@@ -3,7 +3,7 @@
 * {
     box-sizing: border-box;
     font-family: 'Montserrat';
-    --text-color: #F1FCFF;
+    --text-color: #E5F9FF;
     --background-color: #111315;
     --border-radius: 8px;
     --dark-background-color: #090A0B;
@@ -11,6 +11,7 @@
 
 body,
 html {
+    cursor: default;
     padding: 0px;
     margin: 0px;
     background-color: var(--background-color);
@@ -27,6 +28,7 @@ h3 {
 
 p {
     margin-top: 0px;
+    color: white !important;
 }
 
 p,
@@ -41,6 +43,7 @@ a {
 img {
     height: 100%;
     width: auto;
+    transition: .3s;
 }
 
 button {
@@ -49,6 +52,13 @@ button {
     background-color: transparent;
     padding: 10px;
     font-weight: 600;
+    cursor: pointer;
+}
+
+button:hover,
+a:hover {
+    color: white;
+    text-shadow: 1em white;
 }
 
 hr {
@@ -63,6 +73,12 @@ hr {
     padding-right: 30px;
     font-weight: 700;
     border-radius: var(--border-radius);
+    transition: .3s;
+}
+
+.button-highlight:hover {
+    color: var(--background-color) !important;
+    box-shadow: 0 0 1em var(--text-color);
 }
 
 .horizontal-spacer {
@@ -94,7 +110,7 @@ hr {
 .fullContainer {
     width: 100vw;
     height: 100vh;
-
+    min-height: 600px;
     padding-left: 80px;
     padding-right: 80px;
 }
@@ -121,6 +137,8 @@ hr {
 
 .button-box {
     margin-left: auto;
+    display: flex;
+    flex-flow: row;
 }
 
 .arrow-container {
@@ -134,10 +152,11 @@ hr {
 
 .footer {
     width: 100%;
-    height: 300px;
+    height: 350px;
     padding-top: 50px;
     padding-left: 80px;
     padding-right: 80px;
+    background-color: #060708;
 }
 
 .row-footer {
@@ -157,8 +176,36 @@ hr {
     font-size: 15px;
 }
 
-.footer-logo {
+.outer-footer-logo {
     width: 100%;
-    height: auto;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-logo {
+    width: auto;
+    height: 54px;
     padding-right: 100px;
+}
+
+.social-container {
+    height: 30px;
+    width: 100%;
+    padding-right: 100px;
+
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+    justify-content: center;
+}
+
+.social-container img {
+    padding: 3px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+img:hover {
+    filter: brightness(200%);
 }
