@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+    --text-color: #F1FCFF;
+    --background-color: #111315;
+    --border-radius: 8px;
+    --dark-background-color: #090A0B;
+}
+
+body,
+html {
+    padding: 0px;
+    margin: 0px;
+    background-color: var(--background-color);
+}
+
+h1 {
+    font-weight: 900;
+    margin: 0;
+}
+
+h3 {
+    font-weight: 400;
+}
+
+p {
+    margin-top: 0px;
+}
+
+p,
+h1,
+h2,
+h3,
+a {
+    color: var(--text-color);
+    text-decoration-color: var(--text-color);
+}
+
+img {
+    height: 100%;
+    width: auto;
+}
+
+button {
+    border: none;
+    color: var(--text-color);
+    background-color: transparent;
+    padding: 10px;
+    font-weight: 600;
+}
+
+hr {
+    color: var(--text-color);
+}
+
+.button-highlight {
+    background-color: var(--text-color);
+    color: var(--background-color);
+    padding: 12px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-weight: 700;
+    border-radius: var(--border-radius);
+}
+
+.horizontal-spacer {
+    width: 20px;
+}
+
+.darker-container {
+    background-color: var(--dark-background-color);
+}
+
+.center-child {
+    display: flex;
+    align-items: center;
+}
+
+/*
+    SPACES
+*/
+
+.space-left {
+    margin-left: 18px;
+}
+
+
+/*
+    CONTAINER BASE
+*/
+
+.fullContainer {
+    width: 100vw;
+    height: 100vh;
+
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+/*
+    NAVBAR
+*/
+
+.navbar {
+    top: 20px;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.image-box {
+    height: 100%;
+    float: left;
+    padding: 20px;
+    padding-left: 0px;
+}
+
+.button-box {
+    margin-left: auto;
+}
+
+.arrow-container {
+    float: left;
+    margin-left: 18px;
+}
+
+/*
+    FOOTER
+*/
+
+.footer {
+    width: 100%;
+    height: 300px;
+    padding-top: 50px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.row-footer {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-flow: row;
+}
+
+.column-footer {
+    width: 33%;
+    height: 100%;
+}
+
+.column-footer h3 {
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.footer-logo {
+    width: 100%;
+    height: auto;
+    padding-right: 100px;
+}
