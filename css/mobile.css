@@ -1,34 +1,45 @@
-@media screen and (min-width: 1300px) {
+@media screen and (max-width: 800px) {
     .title {
         font-size: 6.8em;
     }
 
     .fullContainer {
-        padding-left: 180px;
-        padding-right: 180px;
+        padding-left: 200px;
+        padding-right: 200px;
     }
 }
 
-@media screen and (max-width: 738px) {
-
+@media screen and (max-width: 800px) {
     html,
     body {
         overflow-x: hidden;
     }
 
     button {
-        font-size: 8px;
+        font-size: 12px;
+    }
+
+    .button-highlight {
+        margin-left: 10px !important;
+    }
+
+    .spacer {
+        height: 20px;
     }
 
     p {
-        font-size: 10px;
+        font-size: 15px;
         margin-left: 0px;
     }
 
     h1,
     h2,
     h3 {
-        font-size: 12px;
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 40px;
     }
 
     .navbar {
@@ -36,7 +47,7 @@
     }
 
     .title-highlighted {
-        max-width: unset;
+        max-width: 300px;
         min-width: unset;
         width: 200%;
     }
@@ -45,9 +56,23 @@
         height: 0px;
     }
 
+    .title-container {
+        padding-left: 20px;
+        padding-right: 0px;
+    }
+
+
+    .client-logo-container img {
+        max-height: 120px;
+    }
+
+    .spacer {
+        height: 0px;
+    }
+
     .image-box {
         height: 90%;
-        max-width: 100px;
+        max-width: 120px;
         padding-right: 0px;
         display: flex;
         align-items: center;
@@ -62,10 +87,6 @@
         width: 100%;
     }
 
-    .button-highlight {
-        padding: 8px;
-    }
-
     .title {
         font-size: 3em;
     }
@@ -74,22 +95,25 @@
         margin-left: 0px;
     }
 
+    .centered-title-container-img {
+        height: 85px !important;
+    }
+
     .fullContainer {
+        min-height: 600px;
         padding-left: 20px;
         padding-right: 20px;
-        min-height: 150px;
     }
 
     .container-left {
-        padding-right: 2px;
+        padding-right: 10px;
+        width: 100%;
     }
 
     .container-right {
-        padding-left: 2px;
-    }
-
-    .margin-left {
-        margin-left: 0px !important;
+        width: 100%;
+        margin-left: 45px !important;
+        padding-left: 10px;
     }
 
 
@@ -102,6 +126,7 @@
         width: 100%;
         height: auto;
         padding: 0;
+        max-height: 30px;
     }
 
     .social-container {
@@ -111,5 +136,10 @@
 
     .column-footer h3 {
         margin-top: 0px;
+    }
+
+    .more-content-container img {
+        height: 40%;
+        width: auto;
     }
 }

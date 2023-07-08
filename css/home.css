@@ -1,8 +1,10 @@
 .title-container {
     width: 100%;
-    height: calc(100% - 80px);
+    height: calc(100vh - 80px);
     display: flex;
     align-items: center;
+    padding-left: 110px;
+    padding-right: 110px;
 }
 
 .centered-title-container {
@@ -11,11 +13,41 @@
 }
 
 .title {
-    font-size: 4.5em;
+    font-size: 6em;
+    font-family: 'Canopee';
+    letter-spacing: .2em;
+    font-weight: 400 !important;
+    text-shadow: -1px 1px 0 var(--text-color),
+    1px 1px 0 var(--text-color),
+   1px -1px 0 var(--text-color),
+  -1px -1px 0 var(--text-color);
+}
+
+.outline {
+    -webkit-text-stroke: 1px var(--background-color);
+    color: #000 !important;
+}
+
+.image-chromatic {
+    position: absolute;
+    height: 81%;
+    z-index: -1;
+    width: fit-content;
+    bottom: 0;
+    padding-bottom: 80px;
+    right: 0;
+    padding-right: 120px;
 }
 
 .subtitle-container {
     margin-left: 45px;
+    margin-top: 45px;
+}
+
+.centered-title-container-img {
+    padding-top: 40px;
+    height: 110px !important;
+    width: auto;
 }
 
 .container-left,
@@ -39,10 +71,10 @@
 */
 
 .title-highlighted {
-    width: 100%;
+    width: 46%;
+    margin-bottom: 40px;
     background-color: var(--text-color);
     height: 70px;
-    border-radius: var(--border-radius);
     display: flex;
     align-items: center;
     padding-left: 40px;
@@ -65,6 +97,8 @@
 .tea-image-container {
     width: 100%;
     height: auto;
+    display: flex;
+    justify-content: center;
 }
 
 .tea-image-container img {
@@ -72,7 +106,12 @@
     height: auto;
     max-height: 571px;
     max-width: 428px;
-    border-radius: var(--border-radius);
+}
+
+.center-titles {
+    display: flex;
+    flex-flow: column;
+    align-items: start;
 }
 
 .center-faq-container {
@@ -102,4 +141,36 @@
 
 .faq-container {
     height: 600px;
+}
+
+.client-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+
+.client-logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.client-logo-container img {
+    padding: 30px;
+    max-height: 160px;
+}
+
+.chrome-background {
+    background-image: url('../img/images/chromatic.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact-end-chrome {
+    width: 60%;
+    text-align: center;
+}
+
+.white-space {
+    height: 100px;
 }

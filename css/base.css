@@ -1,12 +1,19 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,900&display=swap');
+
+
+@import url('./extras/scrollbar.css');
+
+@font-face {
+    font-family: Canopee;
+    src: url("./fonts/canopee.otf") format("opentype");
+}
 
 * {
     box-sizing: border-box;
-    font-family: 'Montserrat';
-    --text-color: #E5F9FF;
-    --background-color: #111315;
-    --border-radius: 8px;
-    --dark-background-color: #090A0B;
+    font-family: 'Inter';
+    --text-color: #111315;
+    --background-color: white;
+    --border-radius: 20px;
+    --dark-background-color: white;
 }
 
 body,
@@ -14,11 +21,12 @@ html {
     cursor: default;
     padding: 0px;
     margin: 0px;
-    background-color: var(--background-color);
+    overflow-x: hidden;
 }
 
 h1 {
     font-weight: 900;
+    font-size: 3em;
     margin: 0;
 }
 
@@ -28,7 +36,7 @@ h3 {
 
 p {
     margin-top: 0px;
-    color: white !important;
+    color: var(--text-color) !important;
 }
 
 p,
@@ -51,18 +59,35 @@ button {
     color: var(--text-color);
     background-color: transparent;
     padding: 10px;
-    font-weight: 600;
+    font-weight: 300;
     cursor: pointer;
 }
 
 button:hover,
 a:hover {
-    color: white;
+    color: var(--text-color);
     text-shadow: 1em white;
 }
 
 hr {
     color: var(--text-color);
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.spacer {
+    width: 100%;
+    height: 80px;
 }
 
 .button-highlight {
@@ -71,7 +96,7 @@ hr {
     padding: 12px;
     padding-left: 30px;
     padding-right: 30px;
-    font-weight: 700;
+    font-weight: 500;
     border-radius: var(--border-radius);
     transition: .3s;
 }
@@ -109,10 +134,10 @@ hr {
 
 .fullContainer {
     width: 100vw;
-    height: 100vh;
-    min-height: 600px;
-    padding-left: 80px;
-    padding-right: 80px;
+    height: fit-content;
+    min-height: 500px;
+    padding-left: 120px;
+    padding-right: 120px;
 }
 
 /*
@@ -146,6 +171,11 @@ hr {
     margin-left: 18px;
 }
 
+.arrow-container img {
+    height: 15px;
+    width: 15px;
+}
+
 /*
     FOOTER
 */
@@ -156,7 +186,6 @@ hr {
     padding-top: 50px;
     padding-left: 80px;
     padding-right: 80px;
-    background-color: #060708;
 }
 
 .row-footer {
@@ -185,7 +214,7 @@ hr {
 
 .footer-logo {
     width: auto;
-    height: 54px;
+    height: 45px;
     padding-right: 100px;
 }
 
@@ -204,8 +233,4 @@ hr {
     padding: 3px;
     margin-left: 5px;
     margin-right: 5px;
-}
-
-img:hover {
-    filter: brightness(200%);
 }
