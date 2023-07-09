@@ -1,0 +1,28 @@
+.image-building-container {
+    width: 100%;
+    float: left;
+    margin-right: 40px;
+}
+
+.image-building-container img {
+    width: 100%;
+    height: auto;
+}
+
+.text-container-building {
+    width: 50%;
+    float: right;
+}
+
+.container-left {
+    float: left;
+    height: 100%;
+    width: 70%;
+}
+
+.container-right {
+    padding-left: 5%;
+    width: 30%;
+    height: 100%;
+    float: right;
+}

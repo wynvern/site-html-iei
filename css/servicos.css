@@ -1,37 +1,3 @@
-.title-container-base {
-    height: 300px;
-}
-
-.title {
-    float: right;
-    font-size: 4.5em;
-    font-family: 'Canopee';
-}
-
-.subtitle-container {
-    float: right;
-}
-
-.subtitle-container h3 {
-    text-align: end;
-}
-
-.title-container {
-    width: 100%;
-    height: calc(100% - 80px);
-    display: flex;
-    align-items: center;
-}
-
-.centered-title-container {
-    width: 100%;
-    height: fit-content;
-}
-
-.title {
-    font-size: 4.5em;
-}
-
 .services-row {
     width: 100%;
     height: fit-content;
@@ -41,19 +7,8 @@
 
 .service-card {
     width: 33%;
-    background-color: var(--text-color);
-    border-radius: var(--border-radius);
     margin: 10px;
     padding: 20px;
-}
-
-.service-card h2 {
-    color: var(--background-color);
-}
-
-.service-card p {
-    font-size: 10px;
-    color: var(--background-color) !important;
 }
 
 .contact-row {
@@ -69,10 +24,6 @@
     margin-bottom: 20px;
 }
 
-.contact-row p {
-    font-size: 10px;
-}
-
 .more-service-data {
     display: flex;
     flex-flow: column;
@@ -84,10 +35,76 @@
     padding: 30px;
 }
 
-
 .more-content-container {
     display: flex;
     flex-direction: row;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+.align-extras-center {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.small-space {
+    width: 100%;
+    height: 70px;
+}
+
+.more-content-container img {
+    height: 200px;
+    width: auto;
+}
+
+.container-left,
+.container-right {
+    width: 50%;
+    height: 100%;
+}
+
+.container-left {
+    float: left;
+    padding-right: 5%;
+}
+
+.container-right {
+    padding-left: 5%;
+    float: right;
+}
+
+/*
+    INNER CONTENT
+*/
+
+.title-highlighted {
+    margin-top: 60px;
+    width: 46%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    min-width: 400px;
+}
+
+.title-highlighted h2 {
+    color: var(--background-color);
+}
+
+.why-contract-subtitle {
+    margin-top: 40px;
+}
+
+.image-products {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.image-products img {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
 }

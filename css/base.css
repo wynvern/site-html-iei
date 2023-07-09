@@ -1,6 +1,5 @@
-
-
-@import url('./extras/scrollbar.css');
+@import url("./extras/scrollbar.css");
+@import url("https://fonts.googleapis.com/css?family=Inter:200,300,400,500,600,700,800,900&display=swap");
 
 @font-face {
     font-family: Canopee;
@@ -9,7 +8,7 @@
 
 * {
     box-sizing: border-box;
-    font-family: 'Inter';
+    font-family: "Inter";
     --text-color: #111315;
     --background-color: white;
     --border-radius: 20px;
@@ -18,6 +17,7 @@
 
 body,
 html {
+    overflow: overlay;
     cursor: default;
     padding: 0px;
     margin: 0px;
@@ -30,12 +30,17 @@ h1 {
     margin: 0;
 }
 
-h3 {
+h2 {
     font-weight: 400;
+}
+
+h3 {
+    font-weight: 300;
 }
 
 p {
     margin-top: 0px;
+    font-weight: 300;
     color: var(--text-color) !important;
 }
 
@@ -51,7 +56,6 @@ a {
 img {
     height: 100%;
     width: auto;
-    transition: .3s;
 }
 
 button {
@@ -86,8 +90,9 @@ hr {
 }
 
 .spacer {
+    display: flex;
     width: 100%;
-    height: 80px;
+    height: 120px;
 }
 
 .button-highlight {
@@ -98,12 +103,14 @@ hr {
     padding-right: 30px;
     font-weight: 500;
     border-radius: var(--border-radius);
-    transition: .3s;
+    transition: 0.2s, padding 1ms;
+    outline: solid 2px var(--text-color);
+    outline-offset: -2px;
 }
 
 .button-highlight:hover {
-    color: var(--background-color) !important;
-    box-shadow: 0 0 1em var(--text-color);
+    color: var(--text-color) !important;
+    background-color: var(--background-color);
 }
 
 .horizontal-spacer {
@@ -120,13 +127,104 @@ hr {
 }
 
 /*
+    BLUR EFFECT TRANSITION
+*/
+
+.blur-effect-transition {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    backdrop-filter: blur(10px);
+    z-index: 10;
+    visibility: visible;
+    animation: ease-out-blur forwards 1s;
+}
+
+@keyframes ease-out-blur {
+    0% {
+    }
+
+    30% {
+        backdrop-filter: blur(10px);
+    }
+
+    50% {
+        backdrop-filter: blur(5px);
+    }
+
+    80% {
+        backdrop-filter: blur(5px);
+    }
+
+    100% {
+        backdrop-filter: blur(0px);
+        visibility: hidden;
+    }
+}
+
+/*
+    TITLE FOR WEBPAGE
+*/
+.title-container-base {
+    height: 300px !important;
+}
+
+.title {
+    float: right;
+    font-size: 6em !important;
+    font-family: "Canopee";
+}
+
+.subtitle-container {
+    float: right;
+}
+
+.subtitle-container p {
+    text-align: right;
+    margin-top: 25px;
+    font-weight: 200;
+}
+
+.subtitle-container h3 {
+    text-align: end;
+}
+
+.title-container {
+    width: 100%;
+    height: calc(100% - 80px);
+    display: flex;
+    align-items: center;
+}
+
+.centered-title-container {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    height: fit-content;
+}
+
+.center-subtitle-container {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    margin-top: 50px;
+}
+
+/*
     SPACES
 */
+
+.margin-left {
+    margin-left: 45px;
+}
 
 .space-left {
     margin-left: 18px;
 }
-
 
 /*
     CONTAINER BASE
@@ -138,6 +236,30 @@ hr {
     min-height: 500px;
     padding-left: 120px;
     padding-right: 120px;
+}
+
+.chrome-background {
+    background-image: url("../img/images/chromatic.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: chrome-background-move infinite 15s;
+    background-size: 150%;
+}
+
+@keyframes chrome-background-move {
+    0% {
+        background-position-x: 0px;
+    }
+
+    50% {
+        background-position-x: -250px;
+        background-position-y: -100px;
+    }
+
+    100% {
+        background-position-x: 0px;
+        background-position-y: 0px;
+    }
 }
 
 /*

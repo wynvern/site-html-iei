@@ -14,13 +14,11 @@
 
 .title {
     font-size: 6em;
-    font-family: 'Canopee';
-    letter-spacing: .2em;
+    font-family: "Canopee";
+    letter-spacing: 0.2em;
     font-weight: 400 !important;
-    text-shadow: -1px 1px 0 var(--text-color),
-    1px 1px 0 var(--text-color),
-   1px -1px 0 var(--text-color),
-  -1px -1px 0 var(--text-color);
+    text-shadow: -1px 1px 0 var(--text-color), 1px 1px 0 var(--text-color),
+        1px -1px 0 var(--text-color), -1px -1px 0 var(--text-color);
 }
 
 .outline {
@@ -30,13 +28,12 @@
 
 .image-chromatic {
     position: absolute;
-    height: 81%;
+    height: 700px;
     z-index: -1;
-    width: fit-content;
+    width: 700px;
     bottom: 0;
-    padding-bottom: 80px;
+    transform: translate(-10%, -10%);
     right: 0;
-    padding-right: 120px;
 }
 
 .subtitle-container {
@@ -135,10 +132,6 @@
     margin-left: auto;
 }
 
-.margin-left {
-    margin-left: 45px;
-}
-
 .faq-container {
     height: 600px;
 }
@@ -158,12 +151,6 @@
 .client-logo-container img {
     padding: 30px;
     max-height: 160px;
-}
-
-.chrome-background {
-    background-image: url('../img/images/chromatic.png');
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .contact-end-chrome {
