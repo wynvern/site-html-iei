@@ -13,6 +13,7 @@
     --background-color: white;
     --border-radius: 20px;
     --dark-background-color: white;
+    --shadow: 0px 11px 2em 0px rgba(53, 53, 53, 0.082);
 }
 
 body,
@@ -31,11 +32,11 @@ h1 {
 }
 
 h2 {
-    font-weight: 400;
+    font-weight: 700;
 }
 
 h3 {
-    font-weight: 300;
+    font-weight: 500;
 }
 
 p {
@@ -56,6 +57,16 @@ a {
 img {
     height: 100%;
     width: auto;
+}
+
+.img-special {
+    box-shadow: var(--shadow);
+    transition: 0.2s;
+}
+
+.img-special:hover {
+    box-shadow: 0px 0px 2em 0px rgba(53, 53, 53, 0.411);
+    margin: 10px;
 }
 
 button {
@@ -110,7 +121,7 @@ hr {
 
 .button-highlight:hover {
     color: var(--text-color) !important;
-    background-color: var(--background-color);
+    background-color: transparent;
 }
 
 .horizontal-spacer {
@@ -138,23 +149,12 @@ hr {
     backdrop-filter: blur(10px);
     z-index: 10;
     visibility: visible;
-    animation: ease-out-blur forwards 1s;
+    animation: ease-out-blur forwards 0.5s;
 }
 
 @keyframes ease-out-blur {
     0% {
-    }
-
-    30% {
         backdrop-filter: blur(10px);
-    }
-
-    50% {
-        backdrop-filter: blur(5px);
-    }
-
-    80% {
-        backdrop-filter: blur(5px);
     }
 
     100% {
@@ -210,8 +210,8 @@ hr {
     flex-flow: column;
     align-items: center;
     width: 100%;
-    height: 300px;
-    margin-top: 50px;
+    height: 250px;
+    margin-top: 40px;
 }
 
 /*
@@ -244,6 +244,7 @@ hr {
     background-size: cover;
     animation: chrome-background-move infinite 15s;
     background-size: 150%;
+    box-shadow: var(--shadow);
 }
 
 @keyframes chrome-background-move {
@@ -344,7 +345,7 @@ hr {
     height: 30px;
     width: 100%;
     padding-right: 100px;
-
+    cursor: pointer;
     display: flex;
     align-items: center;
     margin-top: 12px;

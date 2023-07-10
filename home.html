@@ -95,9 +95,9 @@
                 </h2>
             </div>
             <div class="container-right">
-                <h2 style="margin-top: 40px">
-                    Otimização de Mecanismo de Pesquisa
-                </h2>
+                <h3 style="margin-top: 40px">
+                    Otimização de Mecanismo de Pesquisa.
+                </h3>
                 <p>
                     SEO é essencial para impulsionar a presença online das
                     empresas, aumentando a visibilidade nos mecanismos de
@@ -105,7 +105,7 @@
                     em SEO contribui para o crescimento sustentável da marca e
                     gera resultados reais no mundo digital.
                 </p>
-                <h2 style="margin-top: 40px">Gerenciamento de mídia social</h2>
+                <h3 style="margin-top: 40px">Gerenciamento de mídia social.</h3>
                 <p>
                     O gerenciamento de mídia social é essencial para as empresas
                     se destacarem nas plataformas online. Com estratégias bem
@@ -118,11 +118,16 @@
             </div>
         </div>
         <div class="spacer"></div>
+        <div class="spacer"></div>
         <!-- SECOND PART -->
         <div class="fullContainer">
             <div class="container-left">
                 <div class="tea-image-container">
-                    <img draggable="false" src="./img/images/project_tea.png" />
+                    <img
+                        draggable="false"
+                        src="./img/images/project_tea.png"
+                        class="img-special"
+                    />
                 </div>
                 <div class="space-top-column"></div>
             </div>
@@ -164,8 +169,9 @@
             <h1 class="contact-end-chrome">Alguns de nossos<br />clientes.</h1>
             <h3 style="text-align: center">
                 Descubra como o nosso serviço de gerenciamento de mídia social
-                tem ajudado empresas a se destacarem online. De clientes
-                engajados a resultados impressionantes.
+                tem ajudado empresas<br />
+                a se destacarem online. De clientes engajados a resultados
+                impressionantes.
             </h3>
             <div class="client-logo-container">
                 <img src="./img/images/openai.png" />
@@ -177,7 +183,7 @@
         <div class="fullContainer">
             <div class="center-faq-container">
                 <h1 style="margin-bottom: 60px">FAQ</h1>
-                <div class="question-container">
+                <div class="question-container" onclick="toggleFAQ('map')">
                     <h3>Localização física</h3>
                     <p>Saiba mais sobre a nossa localidade</p>
                     <div class="arrow-container">
@@ -187,10 +193,33 @@
                         />
                     </div>
                 </div>
+                <div class="faq-more-container" id="map">
+                    <div class="faq-left-container">
+                        <img src="./img/images/map.jpg" />
+                    </div>
+                    <div class="faq-right-container">
+                        <div>
+                            <h2>Nossa localização estratégica.</h2>
+                            <p>
+                                A Rexoioum Marketing Digital é uma agência
+                                sediada em um prédio emblemático de Nova Iorque.
+                                Especializada em impulsionar o sucesso online de
+                                empresas locais e internacionais, nossa equipe
+                                de especialistas oferece soluções personalizadas
+                                e inovadoras de marketing digital. Com uma
+                                localização estratégica no centro global de
+                                negócios, aproveitamos a energia da cidade para
+                                desenvolver estratégias digitais impactantes,
+                                aumentar a visibilidade online e gerar
+                                resultados mensuráveis para nossos clientes.
+                            </p>
+                        </div>
+                    </div>
+                </div>
                 <hr />
-                <div class="question-container">
+                <div class="question-container" onclick="toggleFAQ('enter')">
                     <h3>Como faço para entrar</h3>
-                    <p>Basta se tornar um furry peludo fofinho</p>
+                    <p>Saiba mais sobre como se candidatar</p>
                     <div class="arrow-container">
                         <img
                             draggable="false"
@@ -198,8 +227,36 @@
                         />
                     </div>
                 </div>
+                <div class="faq-more-container visible" id="enter">
+                    <div class="faq-left-container">
+                        <img src="./img/images/leak.jpg" />
+                    </div>
+                    <div class="faq-right-container">
+                        <div>
+                            <h2>Como fazer parte de nossa história</h2>
+                            <p>
+                                Para se candidatar a uma oportunidade na
+                                Rexoioum Marketing Digital em Nova Iorque, é
+                                importante seguir alguns passos. Comece
+                                pesquisando e familiarizando-se com a empresa,
+                                entendendo sua visão, valores e serviços
+                                oferecidos. Em seguida, prepare um currículo
+                                personalizado destacando suas habilidades e
+                                experiências relevantes em marketing digital,
+                                incluindo formação acadêmica, experiência
+                                profissional, certificações e projetos
+                                relevantes. Por fim, envie sua candidatura por
+                                meio dos canais indicados pela Rexoioum
+                                Marketing Digital, como seu site de carreiras ou
+                                o contato de recrutamento, e esteja preparado
+                                para participar de possíveis entrevistas e
+                                processos seletivos.
+                            </p>
+                        </div>
+                    </div>
+                </div>
                 <hr />
-                <div class="question-container">
+                <div class="question-container" onclick="toggleFAQ('pay')">
                     <h3>Como posso pagar</h3>
                     <p>Entre em contato para saber mais</p>
                     <div class="arrow-container">
@@ -207,6 +264,36 @@
                             draggable="false"
                             src="./img/icons/arrow_out.svg"
                         />
+                    </div>
+                </div>
+                <div class="faq-more-container visible" id="pay">
+                    <div class="faq-left-container">
+                        <img src="./img/images/pay.jpg" />
+                    </div>
+                    <div class="faq-right-container">
+                        <div>
+                            <h2>Como efetuar o pagamento</h2>
+                            <p>
+                                Para efetuar o pagamento à Rexoioum Marketing
+                                Digital em Nova Iorque, entre em contato com a
+                                empresa para obter informações sobre as opções
+                                de pagamento disponíveis. Verifique os métodos
+                                de pagamento aceitos e estabeleça prazos e
+                                condições. Realize o pagamento de acordo com as
+                                instruções fornecidas pela empresa, garantindo
+                                que as informações fornecidas estejam corretas.
+                                Em caso de dúvidas, entre em contato direto com
+                                a Rexoioum Marketing Digital para obter
+                                assistência.
+                            </p>
+                            <div class="pay-method-container">
+                                <img
+                                    src="./img/icons/visa.png"
+                                    class="invert"
+                                />
+                                <img src="./img/icons/mastercard.svg" />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -234,11 +321,20 @@
                     </div>
                     <div class="social-container">
                         <img
+                            onclick="sendTo('https://pinterest.com')"
                             draggable="false"
                             src="./img/icons/pinterest.svg"
                         />
-                        <img draggable="false" src="./img/icons/whatsapp.svg" />
-                        <img draggable="false" src="./img/icons/linkedin.svg" />
+                        <img
+                            draggable="false"
+                            src="./img/icons/whatsapp.svg"
+                            onclick="sendTo('https://wa.me/5551968402383')"
+                        />
+                        <img
+                            draggable="false"
+                            src="./img/icons/linkedin.svg"
+                            onclick="sendTo('https://linkedin.com')"
+                        />
                     </div>
                 </div>
                 <div class="column-footer">

@@ -101,11 +101,20 @@
                     </div>
                     <div class="social-container">
                         <img
+                            onclick="sendTo('https://pinterest.com')"
                             draggable="false"
                             src="./img/icons/pinterest.svg"
                         />
-                        <img draggable="false" src="./img/icons/whatsapp.svg" />
-                        <img draggable="false" src="./img/icons/linkedin.svg" />
+                        <img
+                            draggable="false"
+                            src="./img/icons/whatsapp.svg"
+                            onclick="sendTo('https://wa.me/5551968402383')"
+                        />
+                        <img
+                            draggable="false"
+                            src="./img/icons/linkedin.svg"
+                            onclick="sendTo('https://linkedin.com')"
+                        />
                     </div>
                 </div>
                 <div class="column-footer">
@@ -124,6 +133,7 @@
                 Rexoium © Todos os Direitos Reservados
             </p>
         </div>
+        <script src="./js/base.js"></script>
     </body>
 </html>
 
