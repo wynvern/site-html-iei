@@ -26,7 +26,7 @@
                     <!--- Don't forget to change logo -->
                 </div>
                 <div class="button-box">
-                    <a href="./home.html"
+                    <a href="./index.html"
                         ><button class="space-left">Home</button></a
                     >
                     <a href="./equipe.html"
@@ -66,7 +66,10 @@
                         >
                             Design feito por profissionais para profissionais.
                         </h3>
-                        <a href="">
+                        <div
+                            class="contact-container"
+                            onclick="sendTo('contato.html')"
+                        >
                             <h3
                                 style="float: left; margin: 0; font-weight: 200"
                             >
@@ -78,7 +81,7 @@
                                     src="./img/icons/arrow_out.svg"
                                 />
                             </div>
-                        </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -118,7 +121,6 @@
             </div>
         </div>
         <div class="spacer"></div>
-        <div class="spacer"></div>
         <!-- SECOND PART -->
         <div class="fullContainer">
             <div class="container-left">
@@ -151,9 +153,9 @@
                     informações sobre os melhores momentos para desfrutar de uma
                     xícara de chá.
                 </p>
-                <a href="">
+                <div class="contact-container" onclick="sendTo('contato.html')">
                     <h3 style="float: left; margin: 0; font-weight: 200">
-                        Saiba Mais
+                        Entre em contato
                     </h3>
                     <div class="arrow-container">
                         <img
@@ -161,7 +163,7 @@
                             src="./img/icons/arrow_out.svg"
                         />
                     </div>
-                </a>
+                </div>
             </div>
         </div>
         <div class="spacer"></div>
@@ -306,7 +308,9 @@
             <h3 style="margin-bottom: 60px">
                 Entre em contado através de todos os canais de comunicação.
             </h3>
-            <button class="button-highlight">Entre em contato</button>
+            <button class="button-highlight" onclick="sendTo('contato.html')">
+                Entre em contato
+            </button>
         </div>
         <div class="white-space"></div>
         <div class="footer">

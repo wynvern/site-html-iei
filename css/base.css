@@ -214,6 +214,14 @@ hr {
     margin-top: 40px;
 }
 
+.center-subtitle-container h1 {
+    text-align: center;
+}
+
+.center-subtitle-container h3 {
+    text-align: center;
+}
+
 /*
     SPACES
 */
@@ -291,12 +299,19 @@ hr {
 
 .arrow-container {
     float: left;
+    display: flex;
+    align-items: center;
     margin-left: 18px;
 }
 
 .arrow-container img {
     height: 15px;
     width: 15px;
+    transition: 0.2s;
+}
+
+.question-container:hover > .arrow-container img {
+    transform: rotate(45deg);
 }
 
 /*
@@ -345,7 +360,6 @@ hr {
     height: 30px;
     width: 100%;
     padding-right: 100px;
-    cursor: pointer;
     display: flex;
     align-items: center;
     margin-top: 12px;
@@ -354,6 +368,7 @@ hr {
 
 .social-container img {
     padding: 3px;
+    cursor: pointer;
     margin-left: 5px;
     margin-right: 5px;
 }

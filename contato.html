@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="shortcut icon"
+            href="./img/logo/logo.svg"
+            type="image/x-icon"
+        />
+        <style>
+            @import url("./css/base.css");
+            @import url("./css/contato.css");
+            @import url("./css/mobile.css");
+        </style>
+        <title>Rexoium</title>
+    </head>
+
+    <body>
+        <div class="blur-effect-transition blur-active"></div>
+        <div
+            class="fullContainer title-container-base chrome-background"
+            style="min-height: 700px"
+        >
+            <div class="navbar">
+                <div class="image-box">
+                    <img draggable="false" src="./img/logo/full_logo.svg" />
+                    <!--- Don't forget to change logo -->
+                </div>
+                <div class="button-box">
+                    <a href="./index.html"
+                        ><button class="space-left">Home</button></a
+                    >
+                    <a href="./equipe.html"
+                        ><button class="space-left">Equipe</button></a
+                    >
+                    <a href="./servicos.html"
+                        ><button class="space-left">Serviços</button></a
+                    >
+                    <a href="./contato.html"
+                        ><button
+                            class="button-highlight space-left"
+                            style="margin-left: 40px"
+                        >
+                            Contato
+                        </button></a
+                    >
+                </div>
+            </div>
+            <div class="title-container">
+                <div class="centered-title-container">
+                    <div>
+                        <h1 class="title">Contato</h1>
+                    </div>
+                    <div class="subtitle-container">
+                        <p>
+                            Entre em contato através do formulário para
+                            planejarmos mudanças.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="spacer"></div>
+        <div class="fullContainer" style="height: 700px">
+            <div class="container-left">
+                <h1>Entre em Contato.</h1>
+                <h3>Vamos conversar sobre todos os detalhes do seu projeto.</h3>
+                <p>
+                    Estamos ansiosos para ouvir de você! Se você tiver alguma
+                    dúvida, consulta ou apenas quiser bater um papo, não hesite
+                    em entrar em contato conosco. Nossa equipe amigável e
+                    dedicada está pronta para fornecer assistência e orientação.
+                    Utilize o formulário abaixo para nos enviar sua mensagem e
+                    responderemos o mais breve possível. Obrigado por escolher a
+                    Rexoioum Marketing Digital. Estamos prontos para ajudar você
+                    a alcançar o sucesso online!
+                </p>
+            </div>
+            <div class="container-right">
+                <div class="center-form">
+                    <form action="/submit" method="post" class="formulario">
+                        <label for="nome" style="margin-top: 0 !important"
+                            >Nome</label
+                        >
+                        <input type="text" id="nome" name="nome" required />
+
+                        <label for="telefone">Telefone</label>
+                        <input
+                            type="tel"
+                            id="telefone"
+                            name="telefone"
+                            required
+                        />
+
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" required />
+
+                        <label for="mensagem">Mensagem</label>
+                        <textarea
+                            id="mensagem"
+                            name="mensagem"
+                            rows="5"
+                            required
+                        ></textarea>
+
+                        <button class="button-highlight" type="submit">
+                            Enviar
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="spacer"></div>
+        <div class="footer">
+            <div class="row-footer">
+                <div class="column-footer">
+                    <div class="outer-footer-logo">
+                        <img
+                            draggable="false"
+                            src="./img/logo/full_logo.svg"
+                            class="footer-logo"
+                        />
+                    </div>
+                    <div class="social-container">
+                        <img
+                            onclick="sendTo('https://pinterest.com')"
+                            draggable="false"
+                            src="./img/icons/pinterest.svg"
+                        />
+                        <img
+                            draggable="false"
+                            src="./img/icons/whatsapp.svg"
+                            onclick="sendTo('https://wa.me/5551968402383')"
+                        />
+                        <img
+                            draggable="false"
+                            src="./img/icons/linkedin.svg"
+                            onclick="sendTo('https://linkedin.com')"
+                        />
+                    </div>
+                </div>
+                <div class="column-footer">
+                    <h3>Contate-nos</h3>
+                    <p>rexoium@furry.com</p>
+                    <p>+55 51 960583223</p>
+                    <p>Avenida Presidente Lucena, 1294, Ivoti, RS - Brasil</p>
+                </div>
+                <div class="column-footer">
+                    <h3>Envie um email</h3>
+                    <p>Entre em contato para planejarmos seu design.</p>
+                </div>
+            </div>
+            <hr />
+            <p style="padding-top: 22px; float: right">
+                Rexoium © Todos os Direitos Reservados
+            </p>
+        </div>
+        <script src="./js/base.js"></script>
+    </body>
+</html>
