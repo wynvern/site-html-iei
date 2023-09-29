@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- Styles -->
+		<link rel="stylesheet" href="./css/biblioteca.css" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+		/>
+		<link rel="shortcut icon" href="./img/icon.png" type="image/x-icon" />
+		<title>Biblioteca</title>
+	</head>
+	<body>
+		<!-- Navbar -->
+		<nav
+			class="navbar navbar-expand-lg d-flex justify-content-between"
+			style="
+				background-color: black;
+				color: white;
+				padding: 20px;
+				padding-left: 40px;
+				padding-right: 40px;
+			"
+		>
+			<div style="width: 30%">
+				<a href="./index.html">
+					<img
+						src="./img/logo.png"
+						style="height: 45px; width: auto"
+						alt="Logo"
+				/></a>
+			</div>
+			<div
+				style="width: 40%"
+				class="d-flex justify-content-between align-items-center nav-hide-content"
+			>
+				<a href="./sobre.html">Sobre o Instituto</a>
+				<a href="./biblioteca.html">Biblioteca</a>
+				<a href="./calendario.html">Calendário</a>
+				<a href="./pesquisa.html"
+					><img
+						src="./img/icons/search.svg"
+						style="height: 15px; padding-right: 6px"
+						alt="Search Icon"
+					/>Pesquisar</a
+				>
+			</div>
+			<div
+				style="width: 30%"
+				class="d-flex justify-content-end align-items-center nav-hide-content"
+			>
+				<b><a href="./entrar.html">Entrar</a></b>
+			</div>
+			<div class="navbar-control">
+				<img
+					src="./img/icons/menu.svg"
+					style="height: 20px"
+					onclick="toggleNavbar()"
+				/>
+			</div>
+		</nav>
+		<div
+			class="container-fluid navbar-contracted justify-content-end bg-black"
+			id="navbar-contracted"
+		>
+			<ul>
+				<li>
+					<b><a>Entrar</a></b>
+				</li>
+				<li><a href="sobre.html">Sobre o Instituto</a></li>
+				<li><a href="biblioteca.html">Biblioteca</a></li>
+				<li><a href="calendario.html">Calendário</a></li>
+				<li>
+					<a href="pesquisa.html"
+						><img
+							src="./img/icons/search.svg"
+							style="height: 15px; padding-right: 6px"
+							alt="Search Icon"
+						/>Pesquisar</a
+					>
+				</li>
+			</ul>
+		</div>
+
+		<!-- Footer -->
+		<div class="container-fluid footer-site">
+			<div class="container-fluid space"></div>
+			<div class="row">
+				<div class="col-md-3 footer-logo">
+					<img src="./img/logo-original.png" style="width: 65%" />
+				</div>
+				<div class="col-md-2">
+					<div style="display: flex; flex-flow: column">
+						<a href="#" class=""><p>Privacidade</p></a>
+						<a href="#" class=""><p>Copyright</p></a>
+						<a href="#" class=""><p>Acessibilidade</p></a>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="d-flex align-items-start" style="flex-flow: column">
+						<b><p class="text-white">Localização</p></b>
+						<a href=""
+							><p>
+								Educação Básica Rua Pastor Ernesto Schlieper, 200 Ivoti / RS -
+								CEP 93900-000
+							</p></a
+						>
+						<a href=""
+							><p>
+								Ensino Superior Rua Júlio Hauser, 171 Ivoti / RS - CEP 93900-000
+							</p></a
+						>
+					</div>
+				</div>
+				<div class="col-md-1"></div>
+				<div class="col-md-2">
+					<div class="d-flex align-items-start" style="flex-flow: column">
+						<b><p class="text-white">Siga-nos</p></b>
+						<div class="social-media-wrapper" style="padding-left: 0px">
+							<div>
+								<img src="./img/icons/facebook.svg" />
+							</div>
+							<div>
+								<img src="./img/icons/instagram.svg" />
+							</div>
+							<div>
+								<img src="./img/icons/twitter.svg" />
+							</div>
+							<div>
+								<img src="./img/icons/youtube.svg" />
+							</div>
+							<div>
+								<img src="./img/icons/linkedin.svg" />
+							</div>
+							<div>
+								<img src="./img/icons/whatsapp.svg" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid space"></div>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="./js/base.js"></script>
+	</body>
+</html>

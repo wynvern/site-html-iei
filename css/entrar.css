@@ -1,0 +1,69 @@
+@import url("./base.css");
+
+.fullscreen-container {
+	width: 100vw;
+	height: 100vh;
+}
+
+.login {
+	height: 70%;
+	border-radius: 6px;
+	box-shadow: 0px 0.2em 9px 0px #00000014;
+	display: flex;
+	min-height: 620px;
+}
+
+.space-small {
+	height: 20px;
+}
+
+.login-form {
+	width: 100%;
+	display: flex;
+	flex-flow: column;
+}
+
+.login-form input {
+	width: 100%;
+	height: 35px;
+	padding: 5px;
+	font-size: 15px;
+	border: 1px #d9d9d9 solid;
+	border-radius: 6px;
+}
+
+.login-form select {
+	height: 35px;
+	padding: 5px;
+	font-size: 15px;
+	border: 1px #d9d9d9 solid;
+	border-radius: 6px;
+	background-color: white;
+}
+
+.login-form div p {
+	font-weight: 600;
+	margin-bottom: 5px;
+}
+
+.login-button {
+	background-color: #e2f1ff;
+	color: #0072da;
+	font-weight: 700;
+	border: none !important;
+}
+
+.login-image {
+	height: 100%;
+	width: 500px;
+	background-image: url("../img/login-imagem.jpg");
+	border-radius: 0px 6px 6px 0px;
+	background-size: cover;
+	border-left: 1px #d9d9d9 solid;
+}
+
+@media (max-width: 950px) {
+	.login-image {
+		display: none;
+	}
+}

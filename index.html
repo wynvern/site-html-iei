@@ -4,19 +4,18 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- Styles -->
 		<link rel="stylesheet" href="./css/home.css" />
 		<link
 			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
 			rel="stylesheet"
 		/>
-		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-			defer
-		></script>
 		<link rel="shortcut icon" href="./img/icon.png" type="image/x-icon" />
 		<title>Instituto Ivoti</title>
 	</head>
 	<body>
+		<!-- Navbar -->
 		<nav
 			class="navbar navbar-expand-lg d-flex justify-content-between"
 			style="
@@ -28,36 +27,71 @@
 			"
 		>
 			<div style="width: 30%">
-				<img src="./img/logo.png" style="height: 45px; width: auto" />
+				<a href="./index.html">
+					<img
+						src="./img/logo.png"
+						style="height: 45px; width: auto"
+						alt="Logo"
+				/></a>
 			</div>
 			<div
 				style="width: 40%"
-				class="d-flex justify-content-between align-items-center"
+				class="d-flex justify-content-between align-items-center nav-hide-content"
 			>
-				<a>Sobre o Instituto</a>
-				<a>Biblioteca</a>
-				<a>Calendário</a>
-				<a>Mais</a>
-				<a
+				<a href="./sobre.html">Sobre o Instituto</a>
+				<a href="./biblioteca.html">Biblioteca</a>
+				<a href="./calendario.html">Calendário</a>
+				<a href="./pesquisa.html"
 					><img
 						src="./img/icons/search.svg"
 						style="height: 15px; padding-right: 6px"
+						alt="Search Icon"
 					/>Pesquisar</a
 				>
 			</div>
 			<div
 				style="width: 30%"
-				class="d-flex justify-content-end align-items-center"
+				class="d-flex justify-content-end align-items-center nav-hide-content"
 			>
-				<b><a>Entrar</a></b>
+				<b><a href="./entrar.html">Entrar</a></b>
+			</div>
+			<div class="navbar-control">
+				<img
+					src="./img/icons/menu.svg"
+					style="height: 20px"
+					onclick="toggleNavbar()"
+				/>
 			</div>
 		</nav>
-		<div class="container-fluid gradient-school" style="padding: 70px">
+		<div
+			class="container-fluid navbar-contracted justify-content-end bg-black"
+			id="navbar-contracted"
+		>
+			<ul>
+				<li>
+					<b><a href="entrar.html">Entrar</a></b>
+				</li>
+				<li><a href="sobre.html">Sobre o Instituto</a></li>
+				<li><a href="biblioteca.html">Biblioteca</a></li>
+				<li><a href="calendario.html">Calendário</a></li>
+				<li>
+					<a href="pesquisa.html"
+						><img
+							src="./img/icons/search.svg"
+							style="height: 15px; padding-right: 6px"
+							alt="Search Icon"
+						/>Pesquisar</a
+					>
+				</li>
+			</ul>
+		</div>
+
+		<div class="container-fluid gradient-school" style="padding: 40px">
 			<div>
-				<h1 class="text-white">Instituto Ivoti</h1>
-				<h3 class="text-white">
+				<h1 class="text-white" style="margin-bottom: 30px">Instituto Ivoti</h1>
+				<p class="text-white">
 					Notícias, arquivos e informações do Instituto Ivoti
-				</h3>
+				</p>
 			</div>
 		</div>
 		<div class="container-fluid space"></div>
@@ -72,27 +106,23 @@
 					<div class="card-body">
 						<h3>Ensino básico</h3>
 						<p class="card-text">
-							Some quick example text to build on the card title
-							and make up the bulk of the card's content.
+							Conheca mais sobre a Educação Infantil, Ensino Fundamental e
+							Ensino Médio.
 						</p>
-						<a href=""
+						<a class="go-to-button"
 							><img src="./img/icons/go.svg" class="go-to"
 						/></a>
 					</div>
 				</div>
 				<div class="card">
-					<img
-						class="card-img-top"
-						src="./img/grad.png"
-						alt="Card image cap"
-					/>
+					<img class="card-img-top" src="./img/grad.png" alt="Card image cap" />
 					<div class="card-body">
 						<h3>Graduação</h3>
 						<p class="card-text">
-							Some quick example text to build on the card title
-							and make up the bulk of the card's content.
+							Os cursos de graduação tem por objetivo formar professores com
+							sóllidos conhecimentos nas dimensões teóricas e práticas.
 						</p>
-						<a href=""
+						<a class="go-to-button"
 							><img src="./img/icons/go.svg" class="go-to"
 						/></a>
 					</div>
@@ -106,10 +136,9 @@
 					<div class="card-body">
 						<h3>Pós-graduação</h3>
 						<p class="card-text">
-							Some quick example text to build on the card title
-							and make up the bulk of the card's content.
+							Conheca mais sobre o programa de Pós-Graduação.
 						</p>
-						<a href=""
+						<a class="go-to-button"
 							><img src="./img/icons/go.svg" class="go-to"
 						/></a>
 					</div>
@@ -129,16 +158,13 @@
 			<div class="container">
 				<div class="row">
 					<div
-						class="col-sm-6"
+						class="col-sm-6 change-orientation"
 						style="padding: 40px; padding-left: 0px"
 					>
-						<img
-							src="./img/noticia.png"
-							style="width: 100%; height: auto"
-						/>
+						<div class="noticia-image"></div>
 					</div>
 					<div
-						class="col-sm-6 d-flex"
+						class="col-sm-6 d-flex change-orientation"
 						style="
 							flex-flow: column;
 							align-items: be;
@@ -146,24 +172,21 @@
 							border-left: 1px solid rgb(230, 230, 230);
 						"
 					>
-						<h2>Prova do NAE</h2>
 						<h3>
-							Estudantes do Instituto Ivoti realizam provas de
-							proficiência em Língua Alemã
+							Estudantes do Instituto Ivoti realizam provas de proficiência em
+							Língua Alemã
 						</h3>
 						<p>
-							Estudantes do Instituto Ivoti realizaram as provas
-							do Deutsches Sprachdiplom (DSD) nos dias 23 e 24 de
-							agosto, quarta e quinta-feira. No primeiro dia de
-							provas participaram 9 estudantes do Núcleo de
-							Aprendizagem de Idiomas (NAI) e 11 acadêmicos do
-							Curso de Letras Português e Alemão da Faculdade
-							Instituto Ivoti, realizando a prova de DSD II. No
-							segundo dia, nas provas de DSD I, foram 28
-							estudantes.
+							Estudantes do Instituto Ivoti realizaram as provas do Deutsches
+							Sprachdiplom (DSD) nos dias 23 e 24 de agosto, quarta e
+							quinta-feira. No primeiro dia de provas participaram 9 estudantes
+							do Núcleo de Aprendizagem de Idiomas (NAI) e 11 acadêmicos do
+							Curso de Letras Português e Alemão da Faculdade Instituto Ivoti,
+							realizando a prova de DSD II. No segundo dia, nas provas de DSD I,
+							foram 28 estudantes.
 						</p>
 						<p class="smallest-text">20 de Agosto de 2023</p>
-						<a href=""
+						<a class="go-to-button"
 							><img src="./img/icons/go.svg" class="go-to"
 						/></a>
 					</div>
@@ -187,10 +210,11 @@
 					<div class="card-body">
 						<h3>Alemão</h3>
 						<p class="card-text">
-							Some quick example text to build on the card title
-							and make up the bulk of the card's content.
+							Nossos cursos são projetados para levá-lo do básico à fluência,
+							mergulhando na riqueza da língua e cultura alemãs. Junte-se a nós
+							e desbloqueie um mundo de oportunidades com o alemão!
 						</p>
-						<a href=""
+						<a class="go-to-button"
 							><img src="./img/icons/go.svg" class="go-to"
 						/></a>
 					</div>
@@ -204,10 +228,12 @@
 					<div class="card-body">
 						<h3>Francês</h3>
 						<p class="card-text">
-							Some quick example text to build on the card title
-							and make up the bulk of the card's content.
+							Nossa abordagem centrada no aluno permite que você mergulhe na
+							língua de Molière, explorando suas nuances e pronúncias
+							encantadoras. Seja para viajar, trabalhar ou apreciar a cultura
+							francesa.
 						</p>
-						<a href=""
+						<a class="go-to-button"
 							><img src="./img/icons/go.svg" class="go-to"
 						/></a>
 					</div>
@@ -221,10 +247,12 @@
 					<div class="card-body">
 						<h3>Inglês</h3>
 						<p class="card-text">
-							Some quick example text to build on the card title
-							and make up the bulk of the card's content.
+							Nossos cursos abrangem todas as idades e níveis de proficiência,
+							com instrutores experientes prontos para guiá-lo. Prepare-se para
+							explorar o mundo e abrir portas para infinitas oportunidades com o
+							inglês!
 						</p>
-						<a href=""
+						<a class="go-to-button"
 							><img src="./img/icons/go.svg" class="go-to"
 						/></a>
 					</div>
@@ -234,73 +262,102 @@
 		<div class="container-fluid space"></div>
 		<div class="container-fluid flex">
 			<h2>Links rápidos</h2>
-			<p>some text</p>
+			<hr />
 			<div class="card-group">
 				<div class="card">
 					<div
-						class="card-body d-flex align-items-center justify-content-between"
+						class="card-body d-flex align-items-center justify-content-between horizontal-flow"
 					>
-						<div class="d-flex align-items-center>
+						<div class="d-flex align-items-center">
 							<img
 								src="./img/icons/calendar.svg"
-								style="height: 70%"
+								style="height: 70px; padding: 10px; margin-right: 15px"
 							/>
-							<h3>Calendário</h3>
+							<h3 class="no-margin">Calendário</h3>
 						</div>
-						<a href=""
-							><img src="./img/icons/go.svg" class="go-to"
-						/></a>
+						<a href=""><img src="./img/icons/go.svg" class="go-to" /></a>
 					</div>
 				</div>
 				<div class="card">
-					<div class="card-body">
-						<h3>Graduação</h3>
-						<a href=""
-							><img src="./img/icons/go.svg" class="go-to"
-						/></a>
+					<div
+						class="card-body d-flex align-items-center justify-content-between horizontal-flow"
+					>
+						<div class="d-flex align-items-center">
+							<img
+								src="./img/icons/book.svg"
+								style="height: 70px; padding: 10px; margin-right: 15px"
+							/>
+							<h3 class="no-margin">Biblioteca</h3>
+						</div>
+						<a href=""><img src="./img/icons/go.svg" class="go-to" /></a>
 					</div>
 				</div>
 				<div class="card">
-					<div class="card-body">
-						<h3>Pós-graduação</h3>
-						<a href=""
-							><img src="./img/icons/go.svg" class="go-to"
-						/></a>
+					<div
+						class="card-body d-flex align-items-center justify-content-between horizontal-flow"
+					>
+						<div class="d-flex align-items-center">
+							<img
+								src="./img/icons/mail.svg"
+								style="width: 70px; padding: 10px; margin-right: 15px"
+							/>
+							<h3 class="no-margin">Email</h3>
+						</div>
+						<a href=""><img src="./img/icons/go.svg" class="go-to" /></a>
 					</div>
 				</div>
 			</div>
 			<div class="card-group" style="padding-top: 10px">
 				<div class="card">
-					<div class="card-body">
-						<h3>Ensino básico</h3>
-						<a href=""
-							><img src="./img/icons/go.svg" class="go-to"
-						/></a>
+					<div
+						class="card-body d-flex align-items-center justify-content-between horizontal-flow"
+					>
+						<div class="d-flex align-items-center">
+							<img
+								src="./img/icons/build.svg"
+								style="width: 70px; padding: 10px; margin-right: 15px"
+							/>
+							<h3 class="no-margin">Local</h3>
+						</div>
+						<a href=""><img src="./img/icons/go.svg" class="go-to" /></a>
 					</div>
 				</div>
 				<div class="card">
-					<div class="card-body">
-						<h3>Graduação</h3>
-						<a href=""
-							><img src="./img/icons/go.svg" class="go-to"
-						/></a>
+					<div
+						class="card-body d-flex align-items-center justify-content-between horizontal-flow"
+					>
+						<div class="d-flex align-items-center">
+							<img
+								src="./img/icons/phone.svg"
+								style="height: 60px; padding: 10px; margin-right: 15px"
+							/>
+							<h3 class="no-margin">Contato</h3>
+						</div>
+						<a href=""><img src="./img/icons/go.svg" class="go-to" /></a>
 					</div>
 				</div>
 				<div class="card">
-					<div class="card-body">
-						<h3>Pós-graduação</h3>
-						<a href=""
-							><img src="./img/icons/go.svg" class="go-to"
-						/></a>
+					<div
+						class="card-body d-flex align-items-center justify-content-between horizontal-flow"
+					>
+						<div class="d-flex align-items-center">
+							<img
+								src="./img/icons/bagage.svg"
+								style="width: 70px; padding: 10px; margin-right: 15px"
+							/>
+							<h3 class="no-margin">Bolsas</h3>
+						</div>
+						<a href=""><img src="./img/icons/go.svg" class="go-to" /></a>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="container-fluid space"></div>
+		<!-- Footer -->
 		<div class="container-fluid footer-site">
 			<div class="container-fluid space"></div>
 			<div class="row">
-				<div class="col-md-3">
+				<div class="col-md-3 footer-logo">
 					<img src="./img/logo-original.png" style="width: 65%" />
 				</div>
 				<div class="col-md-2">
@@ -311,54 +368,43 @@
 					</div>
 				</div>
 				<div class="col-md-4">
-					<div
-						class="d-flex align-items-start"
-						style="flex-flow: column"
-					>
+					<div class="d-flex align-items-start" style="flex-flow: column">
 						<b><p class="text-white">Localização</p></b>
 						<a href=""
 							><p>
-								Educação Básica Rua Pastor Ernesto Schlieper,
-								200 Ivoti / RS - CEP 93900-000
+								Educação Básica Rua Pastor Ernesto Schlieper, 200 Ivoti / RS -
+								CEP 93900-000
 							</p></a
 						>
 						<a href=""
 							><p>
-								Ensino Superior Rua Júlio Hauser, 171 Ivoti / RS
-								- CEP 93900-000
+								Ensino Superior Rua Júlio Hauser, 171 Ivoti / RS - CEP 93900-000
 							</p></a
 						>
 					</div>
 				</div>
 				<div class="col-md-1"></div>
 				<div class="col-md-2">
-					<div
-						class="d-flex align-items-start"
-						style="flex-flow: column"
-					>
+					<div class="d-flex align-items-start" style="flex-flow: column">
 						<b><p class="text-white">Siga-nos</p></b>
-						<div class="container" style="padding-left: 0px">
-							<div class="row">
-								<div class="col-md-4 social-media-icon">
-									<img src="./img/icons/facebook.svg" />
-								</div>
-								<div class="col-md-4 social-media-icon">
-									<img src="./img/icons/instagram.svg" />
-								</div>
-								<div class="col-md-4 social-media-icon">
-									<img src="./img/icons/twitter.svg" />
-								</div>
+						<div class="social-media-wrapper" style="padding-left: 0px">
+							<div>
+								<img src="./img/icons/facebook.svg" />
 							</div>
-							<div class="row">
-								<div class="col-md-4 social-media-icon">
-									<img src="./img/icons/youtube.svg" />
-								</div>
-								<div class="col-md-4 social-media-icon">
-									<img src="./img/icons/linkedin.svg" />
-								</div>
-								<div class="col-md-4 social-media-icon">
-									<img src="./img/icons/whatsapp.svg" />
-								</div>
+							<div>
+								<img src="./img/icons/instagram.svg" />
+							</div>
+							<div>
+								<img src="./img/icons/twitter.svg" />
+							</div>
+							<div>
+								<img src="./img/icons/youtube.svg" />
+							</div>
+							<div>
+								<img src="./img/icons/linkedin.svg" />
+							</div>
+							<div>
+								<img src="./img/icons/whatsapp.svg" />
 							</div>
 						</div>
 					</div>
@@ -366,5 +412,8 @@
 			</div>
 			<div class="container-fluid space"></div>
 		</div>
+		<!-- Scripts -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="./js/base.js"></script>
 	</body>
 </html>
