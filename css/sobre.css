@@ -3,3 +3,17 @@
 .carousel {
 	border-radius: 6px;
 }
+
+
+@media (max-width: 575px) {
+	.col-sm {
+		padding: 0px !important;
+		padding-top: 40px !important;
+	}
+
+	.col-sm-6 {
+		padding: 0px !important;
+		padding-top: 40px !important;
+		border: none !important;
+	}
+}
