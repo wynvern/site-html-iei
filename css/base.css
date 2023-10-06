@@ -204,3 +204,14 @@ li {
 .simple-flex {
 	display: flex;
 }
+
+.carousel-inner {
+	border-radius: 6px;
+}
+
+.login-button {
+	background-color: #e2f1ff;
+	color: #0072da;
+	font-weight: 700;
+	border: none !important;
+}
