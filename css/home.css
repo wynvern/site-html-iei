@@ -1,0 +1,22 @@
+.navbar {
+    background-color: rgba(0, 0, 0, 0.308);
+    backdrop-filter: blur(5px);
+    height: 70px;
+    position: absolute;
+
+    border-bottom: solid 0.5px var(--middle-color);
+}
+
+.start-homescreen {
+    height: 100vh;
+    background-image: url("../img/stars-background.png");
+    background-size: cover;
+}
+
+.inner-navbar {
+    height: 100%;
+    width: fit-content;
+
+    display: flex;
+    align-items: center;
+}
