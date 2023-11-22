@@ -1,22 +1,99 @@
 .navbar {
-    background-color: rgba(0, 0, 0, 0.308);
-    backdrop-filter: blur(5px);
-    height: 70px;
-    position: absolute;
-
-    border-bottom: solid 0.5px var(--middle-color);
-}
-
-.start-homescreen {
-    height: 100vh;
-    background-image: url("../img/stars-background.png");
-    background-size: cover;
+	background-color: rgba(0, 0, 0, 0.308);
+	backdrop-filter: blur(5px);
+	height: 70px;
+	position: absolute;
+	padding-left: 250px;
+	padding-right: 250px;
+	border-bottom: solid 0.5px var(--middle-color);
 }
 
 .inner-navbar {
-    height: 100%;
-    width: fit-content;
+	height: 100%;
+	width: fit-content;
 
-    display: flex;
-    align-items: center;
+	display: flex;
+	align-items: center;
+}
+
+.inner-navbar img {
+	height: 70%;
+}
+
+.button-navbar {
+	border: none;
+	background-color: transparent;
+	color: white;
+	margin-left: 15px;
+	font-weight: 300;
+}
+
+/*
+    HOMESCREEN
+*/
+
+.start-homescreen {
+	height: 100vh;
+	background-image: url("../img/stars-background.png");
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.inner-homescreen p {
+	color: white;
+	text-align: center;
+}
+
+.title-homescreen {
+	color: white;
+	font-family: "Tilt Warp";
+	font-weight: 600;
+	font-size: 100px;
+	text-align: center;
+}
+
+.inner-homescreen {
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+}
+
+.bottom-div {
+	position: absolute;
+	bottom: 0px;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+}
+
+.bottom-div h3 {
+	color: white;
+}
+
+/*
+	Sobre Section
+*/
+
+.sobre-quasar {
+	width: 100%;
+	height: fit-content;
+}
+
+.nebula-column img {
+	height: 500px;
+	width: 500px;
+}
+
+.sobre-texts {
+	display: flex;
+	flex-flow: column;
+	align-items: end;
+}
+
+.sobre-texts h1,
+p,
+h2 {
+	text-align: right;
 }
