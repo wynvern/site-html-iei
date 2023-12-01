@@ -8,8 +8,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Tilt+Warp:wght@300;400;600&display=swap");
 
 .container-fluid {
-	padding-left: 200px;
-	padding-right: 200px;
+	padding-left: 300px;
+	padding-right: 300px;
 }
 
 * {
@@ -28,8 +28,13 @@ html {
 	margin: 0px;
 }
 
+a {
+	color: white;
+}
+
 h1 {
 	font-size: 50px;
+	font-weight: 900;
 }
 
 h2 {
@@ -43,7 +48,8 @@ button {
 }
 
 h3 {
-	font-size: 10px;
+	font-size: 17px;
+	font-weight: 600;
 }
 
 .highlight-button {
@@ -61,4 +67,47 @@ button {
 
 .spacing {
 	height: 100px;
+}
+
+.small-spacing {
+	height: 50px;
+}
+
+.text-white {
+	color: white;
+}
+
+
+.footer-site {
+	background-color: black;
+}
+
+.footer-logo img {
+	height: 60px;
+	width: auto !important;
+}
+
+.footer-logo {
+	display: flex;
+	justify-content: start;
+	height: 150px;
+}
+
+.social-media-wrapper {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr); /* 3 columns */
+	grid-template-rows: repeat(2, 1fr); /* 2 rows */
+	gap: 10px;
+}
+
+.social-media-wrapper div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0px !important;
+	padding-bottom: 8px !important;
+}
+
+.social-media-wrapper div img {
+	height: 17px;
 }
