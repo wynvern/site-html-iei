@@ -1,0 +1,23 @@
+.header-noticia {
+    height: 200px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+.image-header {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.social-media-header {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.social-media-header img {
+    height: 17px;
+    width: auto;
+    padding-right: 15px;
+}

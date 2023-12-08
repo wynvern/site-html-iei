@@ -8,9 +8,8 @@
       @import url("https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css");
       @import url("./css/base.css");
       @import url("./css/home.css");
-      @import url("./css/inscrever.css");
     </style>
-    <title>Inscrever-se</title>
+    <title>Document</title>
   </head>
 
   <body>
@@ -43,96 +42,84 @@
 
     <!-- Homescreen -->
     <div class="container-fluid start-homescreen" style="height: 40vh">
-      <div class="inner-homescreen" style="margin-top: 100px">
-        <h1 class="title-homescreen">Planos</h1>
+        <div class="inner-homescreen" style="margin-top: 100px">
+        <h1 class="title-homescreen">Notícias</h1>
 
         <img src="img/arrow-down.svg" />
-      </div>
+        </div>
     </div>
 
     <div class="container-fluid spacing"></div>
 
-    <!-- Planos -->
+    <!-- Notícias -->
     <div class="container-fluid">
-      <h1 style="text-align: start">Veja todos os nossos planos</h1>
+      <h1 style="text-align: start">Notícias Recentes</h1>
       <hr />
+    </div>
+    <div class="container-fluid">
       <div class="row">
-        <!-- Plano Comum -->
-        <div class="col-sm" style="padding: 20px">
-          <div class="card-oferta d-flex" style="flex-flow: column">
-            <h3>Plano Comum</h3>
-            <h1>R$ 19,99</h1>
-            <p>*Sujeito a mudança de preço</p>
-            <p>Oferta especial para usuários regulares.</p>
-            <p><strong>Benefícios:</strong></p>
-            <ul>
-              <li>Acesso ilimitado ao conteúdo básico</li>
-              <li>Atualizações mensais</li>
-              <li>Suporte ao cliente</li>
-            </ul>
-            <div class="container-fluid small-spacing"></div>
-            <button
-              style="justify-self: end"
-              class="highlight-button"
-              onclick="goTo('pagamento.html')"
-            >
-              Formas de Pagamento
-            </button>
+        <div class="col-sm" style="padding-right: 30px">
+          <div class="vertical-card">
+            <img src="./img/1.png" style="width: 100%; height: auto" />
+            <div class="d-flex" style="flex-flow: column; align-items: start">
+              <h3 onclick="goTo('noticia1.html')">
+                Aurora Boreal: Espetáculo Cósmico Ártico
+                <img src="./img/arrow_out.svg" />
+              </h3>
+              <!-- BRUHHH -->
+              <p>
+                Descubra a ciência por trás das deslumbrantes luzes do norte
+                enquanto a aurora boreal pinta o céu ártico.
+              </p>
+              <i><p>Data • 15/02/2023</p></i>
+            </div>
+          </div>
+          <div class="vertical-card">
+            <img src="./img/2.png" style="width: 100%; height: auto" />
+            <div class="d-flex" style="flex-flow: column; align-items: start">
+              <h3 onclick="goTo('noticia2.html')">
+                Perspectivas Espaciais: Terra Vista do Cosmos
+                <img src="./img/arrow_out.svg" />
+              </h3>
+              <!-- BRUHHH -->
+              <p>
+                Acompanhe o lançamento do revolucionário Telescópio Orbital
+                Galáctico, prometendo revelações cósmicas inéditas.
+              </p>
+              <i><p>Data • 01/06/2023</p></i>
+            </div>
           </div>
         </div>
-
-        <div class="container-fluid small-spacing"></div>
-
-        <!-- Plano Premium -->
-        <div class="col-sm" style="padding: 20px">
-          <div class="card-oferta d-flex" style="flex-flow: column">
-            <h3>Plano Premium</h3>
-            <h1>R$ 29,99</h1>
-            <p>*Sujeito a mudança de preço</p>
-            <p>Oferta premium com benefícios exclusivos.</p>
-            <p><strong>Benefícios:</strong></p>
-            <ul>
-              <li>Acesso ilimitado a conteúdo premium</li>
-              <li>Atualizações semanais</li>
-              <li>Suporte prioritário ao cliente</li>
-              <li>Conteúdo exclusivo e antecipado</li>
-            </ul>
-            <div class="container-fluid small-spacing"></div>
-            <button
-              style="justify-self: end"
-              class="highlight-button"
-              onclick="goTo('pagamento.html')"
-            >
-              Formas de Pagamento
-            </button>
+        <div class="col-sm">
+          <div class="vertical-card">
+            <img src="./img/3.png" style="width: 100%; height: auto" />
+            <div class="d-flex" style="flex-flow: column; align-items: start">
+              <h3 onclick="goTo('noticia3.html')">
+                Telescópio Orbital Galáctico: Nova Fronteira Espacial
+                <img src="./img/arrow_out.svg" />
+              </h3>
+              <!-- BRUHHH -->
+              <p>
+                Acompanhe o lançamento do revolucionário Telescópio Orbital
+                Galáctico, prometendo revelações cósmicas inéditas.
+              </p>
+              <i><p>Data • 05/06/2023</p></i>
+            </div>
           </div>
-        </div>
-
-        <div class="container-fluid small-spacing"></div>
-
-        <!-- Plano Deluxe -->
-        <div class="col-sm" style="padding: 20px">
-          <div class="card-oferta d-flex" style="flex-flow: column">
-            <h3>Plano Deluxe</h3>
-            <h1>R$ 39,99</h1>
-            <p>*Sujeito a mudança de preço</p>
-            <p>Oferta deluxe com os melhores benefícios.</p>
-            <p><strong>Benefícios:</strong></p>
-            <ul>
-              <li>Acesso ilimitado a todos os conteúdos</li>
-              <li>Atualizações diárias</li>
-              <li>Suporte VIP ao cliente</li>
-              <li>Conteúdo exclusivo e antecipado</li>
-              <li>Participação em eventos exclusivos</li>
-            </ul>
-            <div class="container-fluid small-spacing"></div>
-            <button
-              style="justify-self: end"
-              class="highlight-button"
-              onclick="goTo('pagamento.html')"
-            >
-              Formas de Pagamento
-            </button>
+          <div class="vertical-card">
+            <img src="./img/6.png" style="width: 100%; height: auto" />
+            <div class="d-flex" style="flex-flow: column; align-items: start">
+              <h3 onclick="goTo('noticia4.html')">
+                Descoberta Revolucionária: Astrônomos Identificam Nova Classe de
+                Exoplanetas Além da Via Láctea <img src="./img/arrow_out.svg" />
+              </h3>
+              <!-- BRUHHH -->
+              <p>
+                Pesquisa Avançada Revela Exoplanetas Surpreendentes e Expande
+                Fronteiras da Exploração Espacial
+              </p>
+              <i><p>Data • 05/02/2023</p></i>
+            </div>
           </div>
         </div>
       </div>

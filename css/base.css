@@ -6,6 +6,7 @@
 */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Tilt+Warp:wght@300;400;600&display=swap");
+@import url("responsive.css");
 
 .container-fluid {
 	padding-left: 300px;
@@ -57,6 +58,11 @@ h3 {
 	background-color: var(--highlight-color);
 	color: white;
 	font-weight: 700;
+}
+
+h4 {
+	font-size: 12px;
+	font-style: italic;
 }
 
 button {
