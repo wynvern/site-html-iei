@@ -1,117 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/logo-s.png" type="image/x-icon" />
     <style>
-        @import url("https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css");
-        @import url("./css/base.css");
+      @import url("https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css");
+      @import url("./css/base.css");
 
-        .container-login {
-            
-            width: 100vw;
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+      .container-login {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
 
-        .center-container {
-            padding: 30px;
-            background-color: black;
-            border-radius: 30px;
-            height: 70vh;
-            width: 500px;
+      .center-container {
+        padding: 30px;
+        box-shadow: 0 0 1em rgba(0, 0, 0, 0.281);
+        border-radius: 30px;
+        height: 60vh;
+        width: 500px;
 
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            flex-flow: column;
-        }
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-flow: column;
+      }
 
-        img {
-            height: 25px;
-            width: auto;
-        }
+      img {
+        height: 25px;
+        width: auto;
+      }
 
-        form {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 100%;
-        }
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+      }
 
-        label {
-            width: 100%;
-            color: white;
-            text-align: left;
-            margin-bottom: 5px;
-        }
+      label {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 5px;
+      }
 
-        input {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 10px;
-            box-sizing: border-box;
-            border-radius: 30px;
-        }
+      input {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        border-radius: 30px;
+      }
 
-        button {
-            width: 100%;
-            padding: 10px;
-            box-sizing: border-box;
-            background-color: #ffffff;
-            color: #000000;
-            font-weight: 600;
-            border: none;
-            cursor: pointer;
-        }
+      button {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        background-color: var(--highlight-color);
+        color: #ffffff;
+        font-weight: 600;
+        border: none;
+        cursor: pointer;
+      }
 
-        #forgot-password {
-            display: block;
-            margin-top: 10px;
-        }
+      #forgot-password {
+        display: block;
+        margin-top: 10px;
+      }
 
-        .small-space {
-            width: 100%;
-            height: 20px;
-        }
+      .small-space {
+        width: 100%;
+        height: 20px;
+      }
 
-        .sair-button {
-            position: absolute;
-            padding: 30px;
-        }
-
-      </style>
+      .sair-button {
+        position: absolute;
+        padding: 30px;
+      }
+    </style>
     <title>Entrar</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="sair-button">
-        <a href="index.html"><img src="./img/voltar.svg"></a>
+      <a href="index.html"><img src="./img/voltar.svg" /></a>
     </div>
     <div class="container-login">
-        <div class="center-container">
-            <h1 style="color: white;">Entrar</h1>
-            <div style="flex-direction: row; display: flex;">
-                <button style="margin-right: 20px;">
-                    <img src="./img/apple.png" alt="Apple">
-                </button>
-                <button>
-                    <img src="./img/google.png" alt="Google">
-                </button>
-            </div>
-            <form action="#" method="post" id="login-form">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <div class="small-space"></div>
-                <label for="password">Senha:</label>
-                <input type="password" id="password" name="password" required>
-                <div class="small-space"></div>
-                <button type="submit">Login</button>
-                <div class="small-space"></div>
-                <a href="#" id="forgot-password">Esqueceu sua senha?</a>
-            </form>
+      <div class="center-container">
+        <h1>Entrar</h1>
+        <div class="small-space"></div>
+        <div style="flex-direction: row; display: flex">
+          <button style="margin-right: 20px; background-color: transparent">
+            <img src="./img/apple.png" alt="Apple" />
+          </button>
+          <button style="background-color: transparent">
+            <img src="./img/google.png" alt="Google" />
+          </button>
         </div>
+        <div class="small-space"></div>
+        <p>Ou entre com Email e Senha</p>
+        <form action="#" method="post" id="login-form">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <div class="small-space"></div>
+          <label for="password">Senha:</label>
+          <input type="password" id="password" name="password" required />
+          <div class="small-space"></div>
+          <button type="submit">Login</button>
+          <div class="small-space"></div>
+          <a style="color: black; text-decoration: underline"
+            >Esqueceu sua senha?</a
+          >
+        </form>
+      </div>
     </div>
-</body>
+  </body>
 </html>

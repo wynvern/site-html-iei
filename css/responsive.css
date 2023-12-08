@@ -31,4 +31,18 @@
         width: 100px !important;
         margin-bottom: 30px;
     }
+
+    .sobre-quasar {
+        flex-flow: column !important;
+    }
+    
+    .sobre-quasar-b {
+        flex-flow: column !important;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .col-md-6 h2 {
+        margin-top: 30px;
+    }
 }

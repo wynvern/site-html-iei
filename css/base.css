@@ -31,26 +31,31 @@ html {
 
 a {
 	color: white;
+	user-select: none;
 }
 
 h1 {
 	font-size: 50px;
 	font-weight: 900;
+	user-select: none;
 }
 
 h2 {
 	font-size: 30px;
 	font-weight: 600;
+	user-select: none;
 }
 
 p,
 button {
 	font-size: 15px;
+	user-select: none;
 }
 
 h3 {
 	font-size: 17px;
 	font-weight: 600;
+	user-select: none;
 }
 
 .highlight-button {
@@ -116,4 +121,8 @@ button {
 
 .social-media-wrapper div img {
 	height: 17px;
+}
+
+.clickable {
+	cursor: pointer;
 }
